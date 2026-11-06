@@ -1,0 +1,9 @@
+# Netlify settings: the website lives in the "web" folder
+[build]
+  publish = "web"
+
+# let browsers cache the 45 MB model for a week
+[[headers]]
+  for = "/model.onnx"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
