@@ -1,5 +1,14 @@
 # 🍽️ Ochil Dasturxon AI — Uzbek Dish Classifier
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX_Runtime_Web-005CED?logo=onnx&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
+
 A web app that recognises four Uzbek dishes — **lag'mon, manti, palov (plov) and somsa** — from a photo.
 Built with **transfer learning**: a ResNet18 pretrained on ImageNet, fine-tuned on Uzbek dish images.
 
@@ -14,6 +23,19 @@ Built with **transfer learning**: a ResNet18 pretrained on ImageNet, fine-tuned 
    and the whole network was fine-tuned (Adam, lr = 3e-4, 10 epochs, batch 32, random horizontal flip).
 3. **Web app (live):** the model is exported to ONNX and runs in the browser with ONNX Runtime Web — a static site hosted on Netlify (`web/`).
 4. **Python app:** the same design as a [Streamlit](https://streamlit.io) app (`app.py`) for running locally.
+
+## Tech stack
+
+| Area | Tools |
+|---|---|
+| Language | Python, JavaScript, HTML/CSS |
+| Deep learning | PyTorch, timm (ResNet18), torchvision |
+| Data & evaluation | NumPy, Pillow, scikit-learn, Matplotlib, Hugging Face Hub (dataset download) |
+| Training environment | Jupyter Notebook on Google Colab (T4 GPU) |
+| Model export | ONNX, ONNX Runtime (Python) for checking |
+| Web app | ONNX Runtime Web (in-browser inference), HTML/CSS/JS |
+| Python app | Streamlit |
+| Hosting & tools | Netlify, Git & GitHub |
 
 ## Results
 
