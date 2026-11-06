@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Leave notebooks out of the GitHub Languages bar
+*.ipynb linguist-vendored
